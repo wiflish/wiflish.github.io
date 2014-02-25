@@ -1,4 +1,4 @@
-wiflish.github.io
+wiflish.blog.hexo
 =================
 
-blog
+hexo blog configures.
