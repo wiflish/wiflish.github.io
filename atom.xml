@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Wiflish's Blog]]></title>
+  <subtitle><![CDATA[Just Do it at Once]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://blog.wiflish.com//"/>
+  <updated>2014-02-26T02:54:21.083Z</updated>
+  <id>http://blog.wiflish.com//</id>
+  
+  <author>
+    <name><![CDATA[Wiflish]]></name>
+    <email><![CDATA[wiflish.xie@gmail.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[使用hexo写Blog，并发布到github]]></title>
+    <link href="http://blog.wiflish.com/2014/02/26/hexo%E5%86%99blog%EF%BC%8C%E5%B9%B6%E5%8F%91%E5%B8%83%E5%88%B0github/"/>
+    <id>http://blog.wiflish.com/2014/02/26/hexo写blog，并发布到github/</id>
+    <published>2014-02-26T01:26:35.000Z</published>
+    <updated>2014-02-26T01:47:37.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="-nodejs">安装nodejs</h2>
+<blockquote>
+<ol>
+<li>下载<a href="http://nodejs.org/download/" target="_blank">nodejs</a>，选择对应的操作系统版本。</li>
+<li>安装，一路next。 </li>
+<li>打开cmd窗口，输入： node -v </li>
+<li>正确显示nodejs的版本号，即安装成功。</li>
+</ol>
+</blockquote>
+<h2 id="-hexo">安装hexo</h2>
+<blockquote>
+<p>安装hexo，根据网络状况需要一定的时间</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="blockquote">&gt; npm install hexo -g</span>
+</pre></td></tr></table></figure>
+
+<p>初始化blog.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>&gt; $ hexo init blog && <span class="built_in">cd</span> blog
+</pre></td></tr></table></figure>
+
+<p>创建blog文章</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>&gt; $ hexo <span class="keyword">new</span> <span class="string">"Hello World"</span>
+</pre></td></tr></table></figure>
+
+<p>启动服务器,输入：<a href="http://localhost:4000" target="_blank">http://localhost:4000</a> 访问之.</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>&gt; <span class="variable">$ </span>hexo server
+</pre></td></tr></table></figure>
+
+<p>安装主题，hexo主题列表： <a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">Themes</a></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>cd %BLOG_PATH
+$ git clone <span class="tag">&lt;<span class="title">repository</span>&gt;</span> themes/<span class="tag">&lt;<span class="title">theme-name</span>&gt;</span>
+</pre></td></tr></table></figure>
+
+</blockquote>
+<h2 id="-github">部署到github</h2>
+<blockquote>
+<ol>
+<li>下载安装<a href="https://code.google.com/p/msysgit/downloads/list" target="_blank">git</a>。</li>
+<li>在github申请账号，并创建一个username.github.io的仓库名（username为你的账号名）.</li>
+<li>根据github官方帮助文档,<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">安装SSH KEYS</a></li>
+<li>进入上述的blog目录，打开_config.yml文件，修改deploy段配置，详见：<a href="http://zespia.tw/hexo/docs/deployment.html" target="_blank">Hexo Deployment</a></li>
+<li>部署到github<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="comment">hexo</span> <span class="comment">deploy</span> <span class="literal">-</span><span class="literal">-</span><span class="comment">或者</span> <span class="comment">hexo</span> <span class="comment">d</span>
+</pre></td></tr></table></figure>
+
+</li>
+</ol>
+</blockquote>
+<h2 id="-">参考</h2>
+<blockquote>
+<p><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank">http://ibruce.info/2013/11/22/hexo-your-blog/</a></p>
+</blockquote>
+]]></content>
+    
+    
+      <category term="hexo" scheme="http://blog.wiflish.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://blog.wiflish.com/2014/02/24/hello-world/"/>
+    <id>http://blog.wiflish.com/2014/02/24/hello-world/</id>
+    <published>2014-02-24T07:17:28.000Z</published>
+    <updated>2014-02-25T03:35:35.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
+]]></content>
+    
+    
+  </entry>
+  
+</feed>
